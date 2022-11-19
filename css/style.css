@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(190, 211, 192, 1);
+    font-family: 'Playfair Display SC', serif;
+}
+/*navigation*/
+
+header{
+    margin: 20px;
+    background: rgba(148, 212, 159, 1);
+    margin-bottom: 0;
+}
+header.active{
+
+    margin: 20px;
+    min-height: 92.5vh;
+    min-width: 25vw;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-branding{
+   display: block;
+}
+.nav{
+        font-size: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: .5rem;
+        gap: 41px;
+}
+ .nav-menu{
+    display: none;
+ }
+.nav-menu.active{
+    position: fixed;
+    left: 40vw;
+    padding-top: auto;
+    padding-bottom: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-content: center;
+    gap: 41px;
+    padding-top: 25vh;
+
+}
+/*hamburger*/
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45);
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 539px;
+}
+
+/* form */
+section{
+    display: none;
+}
+section.active{
+    display: block;
+}
+.bacground-dark{
+    background-color: rgba(148, 212, 159, 1);
+    min-height: 349.47px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.bacground-light{
+    background-color: rgba(252, 248, 232, 1);
+    min-height: 349.47px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    align-content: center;
+}
+.bacground-light .login{
+    color: rgba(148, 212, 159, 1);
+    font-size: 36px;
+}
+.bacground-light form{
+    margin-top: 50px;
+}
+form label{
+    font-size: 40px;
+}
+form input{
+        width: 100%;
+        font-size: 50px;
+        background: transparent;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    /* border-top: none;
+        border-left: none;
+        border-right: none;*/
+        border: none;
+        border-bottom: 4px solid black;
+}
+form label{
+    margin:20px;
+}
+h2{
+    font-size: 32px;
+    color: rgba(252, 248, 232, 1);
+    padding-top: 50px;
+}
+img{
+    width: 162px;
+    height: 162px;
+    margin-left: 4.5rem;
+}
+
+
+@media(min-width: 1188px){
+    /*navigation*/
+    header.active{
+        margin: 0;
+        background: rgba(0, 0, 0, 0.25);
+        min-height: fit-content;
+    }
+    header{
+        margin: 0;
+        background: rgba(0, 0, 0, 0.25);
+        min-height: fit-content;
+    }
+    .nav{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+        gap: 41px;
+    }
+    .nav-menu{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+        align-items: center;
+        gap: 41px;
+     }
+     .nav-menu.active{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+        align-items: center;
+     }
+    .nav-branding{
+        display: block;
+     }
+     /*hamburger*/
+     .hamburger{
+        display: none;
+        
+     }
+     .hamburger.active{
+        display: none;
+    }
+
+     /*form*/
+
+     section{
+        margin: 1rem;;
+        display: flex;
+        width: 100vw;
+        min-height: 100vh;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+
+        
+    }
+    section.active{
+        display: flex;
+        -width: 90vw;
+        min-height: 90vh;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .bacground-dark{
+        position: block;
+        min-width: 605px;
+        min-height: 700px;
+        margin-right: 0;
+
+        background: #94D49F;
+        box-shadow: 24px 30px 250px rgba(0, 0, 0, 0.25);
+    }
+    .bacground-light{
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        min-width: 600px;
+        min-height: 700px;
+        margin: 0;
+        
+        background: #FCF8E8;
+    }
+    .login{
+        text-align: center;
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85px;
+        color: #94D49F;
+    }
+    h2{
+        width: 538px;
+        height: 255px;
+
+        /* H1 */
+
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 85px;
+
+        color: #FCF8E8;
+    }
+    form label{
+        font-size: 40px;
+    }
+    form input{
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 50px;
+        background: transparent;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    /* border-top: none;
+        border-left: none;
+        border-right: none;*/
+        border: none;
+        border-bottom: 4px solid black;
+    }
+    img{
+        width: 282.84px;
+        height: 282.84px;
+
+    margin-top: 100px;
+    }
+
+
+}
