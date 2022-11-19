@@ -117,17 +117,31 @@ form label{
     font-size: 40px;
 }
 form input{
-        width: 100%;
-        font-size: 50px;
-        background: transparent;
-        margin-top: 25px;
-        margin-bottom: 25px; 
-    /* border-top: none;
-        border-left: none;
-        border-right: none;*/
-        border: none;
-        border-bottom: 4px solid black;
+    box-sizing: border-box;
+    width: 90%;
+    font-size: 50px;
+    background: transparent;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    border: none;
+    /* border-bottom: 4px solid black; */
 }
+.input-group{
+    width: 100%;
+    border-bottom: 4px solid black;
+    position: relative;
+    padding-bottom:10px;
+}
+.input-group i {
+    position: absolute;
+    right: 40px;
+    top: 95px;
+    visibility: hidden;
+}
+
+
+
 form label{
     margin:20px;
 }
@@ -164,6 +178,37 @@ img{
     margin-left: 4.5rem;
 }
 
+/*error messages*/
+.input-group p{
+ color: red;
+ font-size: 30px;
+ visibility: hidden;
+}
+
+/*success*/
+.success .input {
+    border: 4px solid green;
+
+    
+}
+.input{
+    width: 100%;
+    padding:0;
+}
+.error .input{
+    border: 4px solid red;
+}
+.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.error i.fa-circle-exclamation{
+    visibility: visible;
+    color: red;
+}
+.error p{
+    visibility: visible;
+}
 
 @media(min-width: 1188px){
     /*navigation*/
@@ -229,7 +274,7 @@ img{
     }
     section.active{
         display: flex;
-        -width: 90vw;
+        width: 90vw;
         min-height: 90vh;
         text-align: center;
         align-content: center;
@@ -283,24 +328,29 @@ img{
     form label{
         font-size: 40px;
     }
+    .success input{
+        border: 3px green;
+     }
     form input{
         box-sizing: border-box;
-        width: 100%;
+        width: 90%;
         font-size: 50px;
         background: transparent;
         margin-top: 25px;
         margin-bottom: 25px;
-    /* border-top: none;
-        border-left: none;
-        border-right: none;*/
+
         border: none;
+        /* border-bottom: 4px solid black; */
+    }
+    .input-group{
+        width: 100%;
         border-bottom: 4px solid black;
+        
     }
     img{
         width: 282.84px;
         height: 282.84px;
-
-    margin-top: 100px;
+        margin-top: 100px;
     }
 
 

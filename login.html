@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>login</title>
-    <script src="./js/validation.js"></script>
+    <script src="./js/validtion/login-validation.js"></script>
 </head>
 <body>
     <header class="" >
@@ -35,15 +38,35 @@
         </div>
         <div class="bacground-light">
           <p class="login">login</p>
-          <form action="#" method="POST">
-                <label for="uid">Username</label><br>
-                <input type="text" id="uid" name="username"><br>
-                <label for="password">password</label><br>
+          <form  id="login" method="get">
+
+            <div class="input-group ">
+                <label for="uid">username</label><br>
+                <div class="input">
+                    <input type="text" id="uid" name="uid">
+                </div>
+                
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p >error message</p>
+            </div>
+
+            <div class="input-group">
+                <label for="pwd">password</label><br>
+                <div class="input">
                 <input type="password" id="pwd" name="pwd">
+            </div>
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p >error message</p>
+            </div>
+
                 <button class="submit" type="submit">login</button>
+
           </form>
         </div>
     </section>
 </body> 
 <script src="./js/navbar.js"></script>
+<script src="./js/script.js"></script>
 </html>
