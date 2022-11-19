@@ -29,6 +29,7 @@ header.active{
 a{
     color: #000;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-branding{
@@ -46,14 +47,14 @@ a{
     display: none;
  }
 .nav-menu.active{
-    position: fixed;
-    left: 40vw;
-    padding-top: auto;
-    padding-bottom: auto;
+   position: fixed;
+    left: 30%;
+    right: 30%;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
     align-content: center;
+    justify-content: center;
     gap: 41px;
     padding-top: 25vh;
 
