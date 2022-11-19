@@ -130,6 +130,28 @@ form input{
 form label{
     margin:20px;
 }
+.submit{
+    width: 237px;
+    height: 66px;
+    background: rgba(148, 212, 159, 0.4);
+    border-radius: 33px;
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+/* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin: 25px;
+}
+.submit:hover{
+    background: #94D49F;
+    border-radius: 33px;
+}
 h2{
     font-size: 32px;
     color: rgba(252, 248, 232, 1);
