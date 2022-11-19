@@ -8,4 +8,4 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active")
     header.classList.toggle("active")
     section.classList.toggle("active")
-})
+}) 
