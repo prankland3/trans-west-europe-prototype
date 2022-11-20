@@ -1,5 +1,35 @@
 const username = document.getElementById('uid');
 const pwd = document.getElementById('pwd');
+// const submit = document.getElementById('submit');
+
+// submit.addEventListener('submit', (event)=>{
+    
+//     validateForm();
+//     console.log(isFormValid());
+//     if(isFormValid()==true){
+//         submit.submit();
+//      }else {
+//          event.preventDefault();
+//      }
+
+// });
+// function validateForm(){
+
+// }
+
+
+// function error(element, msg) {
+//     const parent = element.parentNode;
+//    if(parent.classList.contains('success')){
+//          parent.classList.remove('success');
+//     }
+//       parent.classList.add('error');
+//       const paragraph = parent.querySelector('p');
+//       paragraph.textContent = msg;
+// }
+
+
+
 const login = document.querySelector('#login');
 
 login.addEventListener('submit', (event)=>{
