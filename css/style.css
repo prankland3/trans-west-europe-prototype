@@ -106,7 +106,7 @@ section.active{
     text-align: center;
     align-content: center;
 }
-.bacground-light .login{
+.bacground-light .login-text{
     color: rgba(148, 212, 159, 1);
     font-size: 36px;
 }
@@ -302,7 +302,7 @@ img{
         
         background: #FCF8E8;
     }
-    .login{
+    .login-text{
         text-align: center;
         font-family: 'Playfair Display SC';
         font-style: normal;
